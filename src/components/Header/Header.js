@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import styles from './Header.module.css';
 
 function Header() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
-    const handleScroll = () => {
+    // Memoizing the handleScroll function
+    const handleScroll = useCallback(() => {
         if (window.scrollY > lastScrollY && isVisible) {
             // Scrolling down
             setIsVisible(false);
@@ -14,7 +15,7 @@ function Header() {
             setIsVisible(true);
         }
         setLastScrollY(window.scrollY);
-    };
+    }, [lastScrollY, isVisible]); // Include dependencies
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -23,15 +24,13 @@ function Header() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrollY, isVisible]); // Add isVisible to the dependencies
+    }, [handleScroll]); // Add handleScroll as a dependency
 
     return (
         <header className={`${styles.HeaderWrapper} ${isVisible ? styles.visible : styles.hidden}`}>
             <nav className={styles.Navbar}>
                 <ul className={styles.NavbarContent}>
-                    <li className={styles.NavbarLogo}>
-                        ROOTED
-                    </li>
+                    <li className={styles.NavbarLogo}>ROOTED</li>
                     <div className={styles.NavbarLinks}>
                         <li>About Us</li>
                         <li>What is Reflexology?</li>
