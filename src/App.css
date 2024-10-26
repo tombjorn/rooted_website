@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
-}
+:root{
+  --green0-color: #02732A;
+  --green1-color: #0F8C3B;
+  --green2-color: #72A66A;
+  --green3-color: #AEBF8A;
+  --green4-color: #F2D4AE;
+  --green5-color: #015a20;
+  --logoBase-color: #ebdbaf;
+  --logoComp-color: #afbfeb;
+  --logoFont-color: #372815;
+  --whiteGrey-color:  #f9f7e7;
+  --hover1-color: #A09BE7;
+  --hover2-color: #A63A50;
+  --hover2b-color: #b16373;
+  --hover3-color: #52489C;
+  --hover4-color: #9A8C98;
+  --hover5-color: #B8CDF8;
+  --hover6-color: #320D6D;
+  --hover7-color: #C47335;
+  --background-color: #faf6eb;
+  --background2-color: #f4edd8;
+  --subheading-color: #262407;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  --global-padding: 20px; /* or whatever value you prefer */
+  --global-margin: 40px; /* or whatever value you prefer */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+/* body {
+  background-color: var(--green3-color);
+} */
+body {
+  font-family: 'Cardo', serif;
+  font-size: 22px;
+  /* background-color: var(--logoBase-color); */
+  background-color: var(--background-color) ;
 }
-
-.App-link {
-  color: #61dafb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  

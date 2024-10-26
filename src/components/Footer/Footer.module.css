@@ -1,0 +1,146 @@
+body {
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: var(--logoBase-color);
+    padding: 70px 0;
+}
+
+.footerCol {
+    width: 25%;
+    padding: 0 15px;
+    /* padding:var(--global-padding); */
+
+}
+
+.footerCol h4 {
+    font-size: 18px;
+    color: var(--subheading-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footerCol h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:var(--green0-color);
+    height: 2px;
+    width: 50px;
+}
+
+.footerCol ul {
+    list-style: none;
+}
+
+.footerCol ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--logoFont-color);
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.footerCol ul li a:hover {
+    color: var(--hover2-color);
+    padding-left: 8px;
+}
+.socialLinks {
+    margin-top: var(--global-margin);
+}
+.socialLinks a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--green0-color);
+    transition: all 0.5s ease;
+}
+
+.socialLinks a:hover {
+    color: var(--hover2-color);
+    background-color: var(--background-color);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .footerCol {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footerCol {
+        width: 100%;
+    }
+}
+.newsletter {
+    margin-bottom: 20px; /* Space between the newsletter and social links */
+}
+
+.newsletter h5 {
+    font-size: 16px; /* Slightly smaller size for the newsletter header */
+    color: var(--subheading-color); /* Use your existing color variable */
+    text-align: left;
+    margin-bottom: 10px; /* Space between title and input */
+}
+
+.newsletterForm {
+    display: flex; /* Use flex to align input and button */
+    justify-content: center; /* Center the form items */
+}
+
+.newsletterInput {
+    padding: 10px; /* Padding for the input */
+    font-size: 14px; /* Font size for the input */
+    border: 1px solid var(--green0-color); /* Existing border color */
+    border-radius: 5px 0 0 5px; /* Rounded left side */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    width: 300px; /* Fixed width */
+}
+
+.newsletterButton {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: var(--green0-color); /* Use your existing color */
+    color: white; /* Text color */
+    border: 1px solid var(--green0-color);
+    border-radius: 0 5px 5px 0; /* Rounded right side */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.newsletterButton:hover {
+    background-color: var(--green5-color); 
+    /* background-color: red; */
+}

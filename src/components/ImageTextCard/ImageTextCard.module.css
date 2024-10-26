@@ -1,0 +1,59 @@
+/* In ImageTextCard.module.css */
+.ImageTextCard {
+    margin: 0;
+    padding: var(--global-padding);
+    margin-top:var(--global-margin);
+    margin-bottom:var(--global-margin);
+    transition: background-color 0.3s ease;
+}
+.ImageTextCard {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: transparent;
+    color: var(--logoFont-color);
+    flex-direction: row; /* Default: image on the left, text on the right */
+}
+.Background1 {
+    background-color: var(--background-color); /* Replace with your desired color */
+  }
+  
+  .Background2 {
+    background-color: var(--background2-color); /* Replace with your alternate color */
+  }
+
+.Flipped {
+    flex-direction: row-reverse; /* Flips layout: image on the right, text on the left */
+}
+
+.ImageTextCardImage {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ImageTextCardText {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: left; /* Default: left-aligned text */
+}
+
+.Flipped .ImageTextCardText {
+    text-align: right; /* Flip: right-align text */
+}
+
+.ImageTextCardTitle {
+    font-size: 1.5rem;
+    margin: 0 0 8px 0;
+    color: var(--subheading-color);
+}
+
+.ImageTextCardContent {
+    font-size: 1rem;
+    color: var(--logoFont-color);
+}

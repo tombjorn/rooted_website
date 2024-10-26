@@ -1,0 +1,100 @@
+/* Header Wrapper Styling */
+.HeaderWrapper {
+  width: 100%;
+  background-color: var(--green3-color);
+  color: var(--logoFont-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.322); /* Subtle modern shadow */
+  backdrop-filter: blur(10px); /* Blurred glass effect */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+/* Slide up effect */
+.hidden {
+  transform: translateY(-100%); /* Slide up out of view */
+}
+
+/* Show the header */
+.visible {
+  transform: translateY(0); /* Slide back into view */
+}
+
+/* Navbar Styling */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Keeps items at the ends */
+  margin: 0 auto;
+  height: 60px;
+  padding: 0 20px;
+}
+
+/* Navbar Content Styling */
+.NavbarContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo Alignment */
+.NavbarLogo {
+  flex: 0 0 auto;
+  font-style: italic;
+  font-size: 2rem; /* Increase font size */
+  font-weight: 10000;
+  text-decoration: underline;
+  margin-right: 20px; /* Space around the logo */
+}
+
+
+/* Centered Navbar Links */
+.NavbarLinks {
+  display: flex;
+  flex: 1; /* Take remaining space */
+  justify-content: center; /* Center align links */
+  gap: 20px; /* Space between links */
+}
+
+.NavbarLinks li {
+  color: var(--logoFont-color); /* Ensure it stands out */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Contact Info Styling */
+.NavbarButtons {
+  flex: 0 0 auto; /* Prevent it from growing */
+  color: var(--logoFont-color);
+}
+
+.ContactInfo {
+  display: flex; /* Use flex to stack items */
+  flex-direction: column; /* Stack vertically */
+  align-items: flex-end; /* Align to the end */
+  text-align: right; /* Align text to the right */
+  padding: 10px; /* Optional padding */
+  font-size: 1rem;
+}
+
+.ContactInfo span {
+  margin: 0; /* No margin around spans */
+  line-height: 1.5; /* Adjust line height for spacing between lines */
+}
+
+.NavbarLinks li {
+  color: #333; /* Default text color */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover state */
+.NavbarLinks li:hover {
+  color: var(--hover2-color);
+  transform: scale(1.05);
+}

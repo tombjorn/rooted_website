@@ -1,0 +1,52 @@
+/* Hero.module.css */
+
+.Hero {
+    margin-top: 40px; /* Ensure no extra margin */
+    padding: 0px; /* Reset padding */
+    position: relative; /* Set position for absolute positioning of content */
+    overflow: hidden; /* Prevent overflow from child elements */
+}
+
+.HeroImage {
+    width: 100%; /* Fill the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.HeroContent {
+    margin-left: 30px;
+    position: absolute; /* Position content absolutely */
+    top: 30%; /* Center vertically */
+    left: 20px; /* Align content to the left with some padding */
+    color: var(--green3-color); /* Text color */
+    text-align: left; /* Left align text */
+    /* padding: 20px; Add padding for spacing */
+    /* background: rgba(0, 0, 0, 0); Optional: dark background for readability */
+}
+
+.Heading {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
+    color: var(--subheading-color)
+}
+
+.Subheading {
+    font-size: 1.25rem; /* Adjust subheading size */
+    margin: 10px 0; /* Margin between subheading and button */
+}
+
+.BookButton {
+    margin-top: 5px;
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Button font size */
+    color: white; 
+    background-color: var(--green1-color); /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.BookButton:hover {
+    background-color: var(--green5-color); /* Darker shade on hover */
+}
