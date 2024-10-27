@@ -3,7 +3,15 @@ import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+
+import { useNavigate } from 'react-router-dom';
+
 function Footer() {
+    const navigate = useNavigate();
+    
+    const goToHome = () => {
+        navigate('/');
+    };
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -12,6 +20,7 @@ function Footer() {
                     <div className={styles.footerCol}>
                         <h4>Get to know us...</h4>
                         <ul>
+                            <li><a onClick={goToHome} href="#!">Home</a></li>
                             <li><a href="#!">About</a></li>
                             <li><a href="#!">Treatments</a></li>
                             <li><a href="#!">Gallery</a></li>

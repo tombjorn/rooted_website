@@ -5,9 +5,11 @@ import Hero from './Hero/Hero';
 import styles from './MainPage.module.css';
 import ImageTextCard from "../ImageTextCard/ImageTextCard";
 import ThreeColumnTextCard from "../ThreeColCard/ThreeColCard";
-// import BurgerButton from '../BurgerButton/BurgerButton'; // Import the BurgerButton component
+
 
 function MainPage(){
+
+
     return (
         <div className={styles.MainPage}>
             <Header/>
