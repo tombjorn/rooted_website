@@ -24,7 +24,7 @@
 
   --global-padding: 20px; /* or whatever value you prefer */
   --global-margin: 40px; /* or whatever value you prefer */
-
+  --global-marginTop: 100px;
   --button-transition: all 0.3s ease;
 }
 @import url('https://fonts.googleapis.com/css?family=Cardo');

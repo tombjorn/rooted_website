@@ -28,7 +28,7 @@ import Footer from '../Footer/Footer';
 
 const $COMPONENT_NAME = (props) => {
   return (
-    <div>
+    <div className={styles.$COMPONENT_NAME}>
     <Header />
     <section className={styles.$COMPONENT_NAME}>
       <h1>$COMPONENT_NAME Component</h1>
@@ -43,8 +43,9 @@ EOL
 
 # Create the .module.css file with basic styling
 cat <<EOL > "$COMPONENT_DIR/$COMPONENT_NAME.module.css"
-.container {
-  /* Add your component styles here */
+.$COMPONENT_NAME {
+  background-color: var(--background2-color);
+  margin-top: var(--global-marginTop);
 }
 EOL
 

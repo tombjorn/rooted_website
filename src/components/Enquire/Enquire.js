@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 const Enquire = (props) => {
   return (
-    <div>
+    <div className={styles.Enquire}>
       <Header />
       <section className={styles.contactContainer}> 
         <div className={styles.contactContent}>

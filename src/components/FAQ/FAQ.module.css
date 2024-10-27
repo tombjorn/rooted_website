@@ -1,7 +1,7 @@
-.container {
+.FAQ {
   background-color: var(--background2-color);
   color: var(--logoFont-color);
-  padding: 20px;
+  margin-top: var(--global-marginTop);
 }
 
 .heading {

@@ -1,5 +1,6 @@
-body {
+.Enquire {
   background: var(--background2-color);
+  margin-top: var(--global-marginTop);
 
 }
 .contactContainer {

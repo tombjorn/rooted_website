@@ -1,3 +1,4 @@
-.container {
+.About {
+  margin-top: var(--global-marginTop);
   /* Add your component styles here */
 }

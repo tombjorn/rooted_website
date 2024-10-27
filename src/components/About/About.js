@@ -9,7 +9,7 @@ const About = (props) => {
   const location = { lat: 51.854947, lng: 1.062228 }; // Example coordinates (Great Bentley, UK)
 
   return (
-    <div>
+    <div className={styles.About}>
     <Header />
     <section className={styles.About}>
     <div></div>

@@ -22,7 +22,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div>
+    <div className={styles.FAQ}>
       <Header/>
       <section className={styles.container}>
         <h1 className={styles.heading}>Frequently Asked Questions</h1>
