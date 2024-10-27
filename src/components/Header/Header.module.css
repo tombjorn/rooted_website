@@ -98,3 +98,13 @@
   color: var(--hover2-color);
   transform: scale(1.05);
 }
+.NavbarLogo a {
+  color: var(--logoFont-color); /* Ensure the link color matches your theme */
+  text-decoration: none; /* Remove underline from link */
+  transition: all 0.2s ease;
+}
+
+.NavbarLogo a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+  color: var(--logoFont2-color);
+}

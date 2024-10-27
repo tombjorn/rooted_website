@@ -27,7 +27,7 @@
 .Heading {
     font-size: 2.5rem; /* Adjust heading size */
     margin: 0; /* Remove default margin */
-    color: var(--subheading-color)
+    color: var(--logoBase-color)
 }
 
 .Subheading {
@@ -39,14 +39,15 @@
     margin-top: 5px;
     padding: 10px 20px; /* Button padding */
     font-size: 1rem; /* Button font size */
-    color: white; 
-    background-color: var(--green1-color); /* Button background color */
+    color: var(--logoFont-color); 
+    background-color: var(--hover5-color); /* Button background color */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded button */
     cursor: pointer; /* Pointer on hover */
     transition: background-color 0.3s; /* Smooth transition */
+    text-decoration: none;
 }
 
 .BookButton:hover {
-    background-color: var(--green5-color); /* Darker shade on hover */
+    background-color: var(--hover1-color); /* Darker shade on hover */
 }

@@ -2,19 +2,9 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-
-
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 function Footer() {
-    const navigate = useNavigate();
-    
-    const goToHome = () => {
-        navigate('/');
-    };
-    const goToFAQ = () => {
-        navigate('/FAQ');
-    };
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -23,10 +13,10 @@ function Footer() {
                     <div className={styles.footerCol}>
                         <h4>Get to know us...</h4>
                         <ul>
-                            <li><a onClick={goToHome} href="#!">Home</a></li>
-                            <li><a href="#!">About</a></li>
-                            <li><a href="#!">Treatments</a></li>
-                            <li><a href="#!">Gallery</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/treatments">Treatments</Link></li>
+                            <li><Link to="/gallery">Gallery</Link></li>
                         </ul>
                     </div>
 
@@ -34,9 +24,9 @@ function Footer() {
                     <div className={styles.footerCol}>
                         <h4>Info</h4>
                         <ul>
-                            <li><a onClick={goToFAQ} href="#!">FAQ</a></li>
-                            <li><a href="#!">Pricing</a></li>
-                            <li><a href="#!">Bookings</a></li>
+                            <li><Link to="/faq">FAQ</Link></li>
+                            <li><Link to="/pricing">Pricing</Link></li>
+                            <li><Link to="/bookings">Bookings</Link></li>
                         </ul>
                     </div>
 
@@ -44,9 +34,9 @@ function Footer() {
                     <div className={styles.footerCol}>
                         <h4>Wellness</h4>
                         <ul>
-                            <li><a href="#!">Recipes</a></li>
-                            <li><a href="#!">Exercises</a></li>
-                            <li><a href="#!">Blog</a></li>
+                            <li><Link to="/recipes">Recipes</Link></li>
+                            <li><Link to="/exercises">Exercises</Link></li>
+                            <li><Link to="/blog">Blog</Link></li>
                         </ul>
                     </div>
 

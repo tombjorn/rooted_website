@@ -110,7 +110,7 @@ body {
 
 .newsletter h5 {
     font-size: 16px; /* Slightly smaller size for the newsletter header */
-    color: var(--subheading-color); /* Use your existing color variable */
+    color: var(--logoFont-color); /* Use your existing color variable */
     text-align: left;
     margin-bottom: 10px; /* Space between title and input */
 }

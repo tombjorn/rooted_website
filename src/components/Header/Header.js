@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import styles from './Header.module.css';
 
 function Header() {
@@ -30,7 +31,9 @@ function Header() {
         <header className={`${styles.HeaderWrapper} ${isVisible ? styles.visible : styles.hidden}`}>
             <nav className={styles.Navbar}>
                 <ul className={styles.NavbarContent}>
-                    <li className={styles.NavbarLogo}>ROOTED</li>
+                    <li className={styles.NavbarLogo}>
+                        <Link to="/">ROOTED</Link> {/* Wrap the logo in a Link */}
+                    </li>
                     <div className={styles.NavbarLinks}>
                         <li>About Us</li>
                         <li>What is Reflexology?</li>

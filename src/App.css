@@ -8,6 +8,7 @@
   --logoBase-color: #ebdbaf;
   --logoComp-color: #afbfeb;
   --logoFont-color: #372815;
+  --logoFont2-color: #5e492d;
   --whiteGrey-color:  #f9f7e7;
   --hover1-color: #A09BE7;
   --hover2-color: #A63A50;
@@ -19,7 +20,7 @@
   --hover7-color: #C47335;
   --background-color: #faf6eb;
   --background2-color: #f4edd8;
-  --subheading-color: #262407;
+  --subheading-color: #02732A;
 
   --global-padding: 20px; /* or whatever value you prefer */
   --global-margin: 40px; /* or whatever value you prefer */

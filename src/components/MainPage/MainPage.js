@@ -17,7 +17,7 @@ function MainPage(){
             <ImageTextCard 
                 title="Reconnect with Nature" 
                 content="Discover the benefits of reflexology for your mind and body." 
-                image="hero-placeholder.jpg"
+                image="card-placeholder.jpg"
                 flip={true} 
                 background={false}
             />

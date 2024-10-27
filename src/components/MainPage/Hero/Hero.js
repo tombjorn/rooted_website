@@ -1,24 +1,19 @@
 import React from 'react';
 import styles from './Hero.module.css';
-
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Hero() {
-    const navigate = useNavigate();
-    
-    const goToEnquire = () => {
-        navigate('/../Enquire');
-    };
     return (
         <div className={styles.Hero}>
-            <img src='card-placeholder.jpg' alt='hero' className={styles.HeroImage} />
-            {/* <div className={styles.HeroImage}></div> */}
+            <img src='walking-wide.png' alt='hero' className={styles.HeroImage} />
             <div className={styles.HeroContent}>
                 <h1 className={styles.Heading}>Relax and unwind</h1>
-                <button onClick={goToEnquire} className={styles.BookButton}>Enquire</button>
+                <Link to="/Enquire" className={styles.BookButton}>
+                    Enquire
+                </Link>
             </div>
         </div>
     );
-};
+}
 
 export default Hero;
