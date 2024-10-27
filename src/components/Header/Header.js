@@ -37,7 +37,6 @@ function Header() {
                     <div className={styles.NavbarLinks}>
                         <li><Link to="/enquire">Book Now</Link></li>
                         <li><Link to="/about">About Us</Link></li>
-                        <li>Testimonials</li>
                         <li>Wellness</li>
                     </div>
                     <li className={styles.NavbarButtons}>

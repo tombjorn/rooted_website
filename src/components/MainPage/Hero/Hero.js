@@ -8,7 +8,7 @@ function Hero() {
             <img src='walking-wide.png' alt='hero' className={styles.HeroImage} />
             <div className={styles.HeroContent}>
                 <h1 className={styles.Heading}>Relax and unwind</h1>
-                <Link to="/Enquire" className={styles.BookButton}>
+                <Link to="/enquire" className={styles.BookButton}>
                     Enquire
                 </Link>
             </div>
