@@ -12,6 +12,9 @@ function Footer() {
     const goToHome = () => {
         navigate('/');
     };
+    const goToFAQ = () => {
+        navigate('/FAQ');
+    };
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -31,7 +34,7 @@ function Footer() {
                     <div className={styles.footerCol}>
                         <h4>Info</h4>
                         <ul>
-                            <li><a href="#!">FAQ</a></li>
+                            <li><a onClick={goToFAQ} href="#!">FAQ</a></li>
                             <li><a href="#!">Pricing</a></li>
                             <li><a href="#!">Bookings</a></li>
                         </ul>

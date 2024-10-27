@@ -2,7 +2,9 @@
 import './App.css';
 import MainPage from './components/MainPage/MainPage';
 import Enquire from './components/Enquire/Enquire';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import FAQ from './components/FAQ/FAQ';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
@@ -11,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage/>} />
           <Route path="/Enquire" element={<Enquire/>}/>
-
+          <Route path="/FAQ" element={<FAQ/>}/>
         </Routes>
       </Router>
     </div>

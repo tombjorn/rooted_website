@@ -34,7 +34,7 @@ body {
   font-family: 'Cardo', serif;
   font-size: 22px;
   /* background-color: var(--logoBase-color); */
-  background-color: var(--background-color) ;
+  background-color: var(--background2-color) ;
 }
 * {
   margin: 0;

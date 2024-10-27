@@ -23,11 +23,17 @@ mkdir -p "$COMPONENT_DIR"
 cat <<EOL > "$COMPONENT_DIR/$COMPONENT_NAME.js"
 import React from 'react';
 import styles from './$COMPONENT_NAME.module.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
-function $COMPONENT_NAME() {
+const $COMPONENT_NAME = (props) => {
   return (
-    <div className={styles.$COMPONENT_NAME}>
+    <div>
+    <Header />
+    <section className={styles.$COMPONENT_NAME}>
       <h1>$COMPONENT_NAME Component</h1>
+    </section>
+    <Footer />
     </div>
   );
 }

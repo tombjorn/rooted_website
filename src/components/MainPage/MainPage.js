@@ -19,7 +19,7 @@ function MainPage(){
                 content="Discover the benefits of reflexology for your mind and body." 
                 image="hero-placeholder.jpg"
                 flip={true} 
-                background={true}
+                background={false}
             />
             <ThreeColumnTextCard
                 title1='"I had never tried reflexology before, but Georgina made the experience truly transformative."'
@@ -35,7 +35,7 @@ function MainPage(){
                 content="Discover the benefits of reflexology for your mind and body." 
                 image="hero-placeholder.jpg"
                 flip={false} 
-                background={true}
+                background={false}
             />
             <Footer />
         </div>
