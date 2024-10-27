@@ -15,8 +15,6 @@ function MainPage(){
         <div className={styles.MainPage}>
             <Header/>
             <Hero />
-            <TestEnvVariable />
-
             <ImageTextCard 
                 title="Reconnect with Nature" 
                 content="Discover the benefits of reflexology for your mind and body." 
