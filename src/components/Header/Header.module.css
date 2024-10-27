@@ -91,6 +91,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  text-decoration: none;
 }
 
 /* Hover state */
@@ -107,4 +108,12 @@
 .NavbarLogo a:hover {
   text-decoration: underline; /* Optional: Add underline on hover */
   color: var(--logoFont2-color);
+}
+.NavbarLinks a {
+  text-decoration: none;
+  color: var(--logoFont-color);
+}
+.NavbarLinks a:hover {
+  text-decoration: none;
+  color: var(--hover2-color);
 }

@@ -6,6 +6,7 @@ import styles from './MainPage.module.css';
 import ImageTextCard from "../ImageTextCard/ImageTextCard";
 import ThreeColumnTextCard from "../ThreeColCard/ThreeColCard";
 
+import TestEnvVariable from '../GoogleMapEmbedCard/TestEnvVariable';
 
 function MainPage(){
 
@@ -14,6 +15,8 @@ function MainPage(){
         <div className={styles.MainPage}>
             <Header/>
             <Hero />
+            <TestEnvVariable />
+
             <ImageTextCard 
                 title="Reconnect with Nature" 
                 content="Discover the benefits of reflexology for your mind and body." 

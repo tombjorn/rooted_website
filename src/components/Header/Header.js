@@ -35,8 +35,8 @@ function Header() {
                         <Link to="/">ROOTED</Link> {/* Wrap the logo in a Link */}
                     </li>
                     <div className={styles.NavbarLinks}>
-                        <li>About Us</li>
-                        <li>What is Reflexology?</li>
+                        <li><Link to="/enquire">Book Now</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
                         <li>Testimonials</li>
                         <li>Wellness</li>
                     </div>

@@ -1,0 +1,49 @@
+/* Wrapper for the three-column layout */
+.TwoColumnTextCard {
+    display: flex;
+    justify-content: space-between; /* Spread out columns evenly */
+    gap: 20px; /* Optional gap between columns */
+    padding: var(--global-padding);
+    margin-top:var(--global-margin);
+    margin-bottom:var(--global-margin);
+    text-align: center; /* Center align all text within the card */
+}
+
+/* Style for each column */
+.Column {
+    flex: 1; /* Each column takes equal space */
+    padding: 20px;
+    /* border-radius: 30px;  */
+    display: flex;
+    flex-direction: column; /* Align text vertically in each column */
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Style for column titles */
+.Column h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    margin-bottom: 10px; /* Spacing below title */
+    color: var(--subheading-color);
+}
+
+/* Style for column text */
+.Column p {
+    text-align: left;
+    font-size: medium;
+    margin: 0;
+    color:var(--logoFont2-color);
+}
+
+/* Background option 1 */
+.Background1 {
+    background-color: var(--background-color); 
+}
+
+/* Background option 2 */
+.Background2 {
+    /* background-color: var(--background2-color);  */
+    background-color: var(--logoBase-color);
+}
