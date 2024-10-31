@@ -35,9 +35,10 @@ function Header() {
                         <Link to="/">ROOTED</Link> {/* Wrap the logo in a Link */}
                     </li>
                     <div className={styles.NavbarLinks}>
-                        <li><Link to="/enquire">Book Now</Link></li>
+                        <li><Link to="/enquire">Book Appointment</Link></li>
+                        <li><Link to="/Treatments">Treatments</Link></li>
                         <li><Link to="/about">About Us</Link></li>
-                        <li>Wellness</li>
+                        {/* <li>Wellness</li> */}
                     </div>
                     <li className={styles.NavbarButtons}>
                         <div className={styles.ContactInfo}>

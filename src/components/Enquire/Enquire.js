@@ -10,9 +10,10 @@ const Enquire = (props) => {
       <section className={styles.contactContainer}> 
         <div className={styles.contactContent}>
           <h1 className={styles.mainHeading}>Enquire for an Appointment</h1>
-          <p className={styles.description}>
-            Due to safety concerns, we do not take automatic bookings. An enquiry must be made in order to secure an appointment. Please fill out the form below to reach out, and we will get back to you as soon as possible.
-          </p>
+          <h5 className={styles.description}>
+            Please fill out the form below to book an appointment, and we will get back to you as soon as possible.
+          </h5>
+          <p className={styles.timeLength}>Each session is a personalized, 60-minute treatment designed to support your unique healing journey.</p>
           
           <form className={styles.contactForm}>
             <h2 className={styles.heading}>Contact Form</h2>

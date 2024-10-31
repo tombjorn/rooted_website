@@ -9,7 +9,7 @@ function Hero() {
             <div className={styles.HeroContent}>
                 <h1 className={styles.Heading}>Relax and unwind</h1>
                 <Link to="/enquire" className={styles.BookButton}>
-                    Enquire
+                    Book Now
                 </Link>
             </div>
         </div>

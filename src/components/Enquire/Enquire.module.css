@@ -25,8 +25,15 @@
 
 .description {
   font-size: 16px;
-  color: var(--text-secondary-color);
+  color: var(--logoFont-color);
   text-align: center;
+  margin-bottom: 20px;
+}
+.timeLength {
+  font-size: 16px;
+  color: var(--logoFont-color);
+  text-align: center;
+  font-style: italic;
   margin-bottom: 30px;
 }
 
@@ -71,6 +78,7 @@
   display: block;
   margin-bottom: 5px;
 }
+@import url('https://fonts.googleapis.com/css?family=Cardo');
 
 .field {
   width: 100%;
@@ -81,6 +89,9 @@
   border-radius: 6px;
   padding: 10px;
   font-size: 16px;
+  font-family: 'Cardo', serif;
+  font-style: italic;
+
 }
 
 .message {

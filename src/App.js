@@ -5,6 +5,7 @@ import Enquire from './components/Enquire/Enquire';
 import FAQ from './components/FAQ/FAQ';
 import About from './components/About/About';
 import Gallery from './components/Gallery/Gallery';
+import Treatments from './components/Treatments/Treatments';
 import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/enquire" element={<Enquire />} />
+          <Route path="/treatments" element={<Treatments />}/>
           <Route path="/faq" element={<FAQ />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />

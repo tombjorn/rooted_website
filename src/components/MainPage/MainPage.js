@@ -15,9 +15,9 @@ function MainPage(){
             <Header/>
             <Hero />
             <ImageTextCard 
-                title="Reflexology" 
-                content="Discover the benefits of reflexology for your mind and body." 
-                image="card-placeholder.jpg"
+                title="Reconnect with Nature" 
+                content="One-on-one reflexology sessions provide valuable support for anyone on a healing journey. Reflexology is beneficial for people of all ages, offering gentle yet effective care tailored to individual needs." 
+                image="woman-walking.png"
                 flip={true} 
                 background={false}
             />
@@ -31,9 +31,9 @@ function MainPage(){
                 background={false}
             />
             <ImageTextCard 
-                title="Reconnect with Nature" 
-                content="Discover the benefits of reflexology for your mind and body." 
-                image="woman-walking.png"
+                title="Reflexology" 
+                content="At Rooted Reflexology, we offer a safe, calming environment where people of all ages can feel heard, supported, and nurtured in their healing journey." 
+                image="card-placeholder.jpg"
                 flip={false} 
                 background={false}
             />
